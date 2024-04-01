@@ -39,7 +39,9 @@ public class MenuItem extends MenuComponent {
     }
 
     public MenuItem[] getItems(){
-        return null;
+        MenuItem[] items = new MenuItem[1];
+        items[0] = this;
+        return items;
     }
 
     public Iterator<MenuComponent> createIterator(){
