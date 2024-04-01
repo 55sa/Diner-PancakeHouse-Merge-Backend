@@ -12,9 +12,10 @@ import java.util.ArrayList;
 public class MergerRepository {
     public ArrayList<Menu> getTheMenus() {
         ArrayList<Menu> menus = new ArrayList<>();
-        menus.add(new DinerMenu());
-        menus.add(new PancakeHouseMenu());
-        menus.add(new CafeMenu());
+//        menus.add(new DinerMenu());
+//        menus.add(new PancakeHouseMenu());
+//        menus.add(new CafeMenu());
+
         return menus;
     }
 

@@ -32,14 +32,17 @@ public class MergerController {
 
     @GetMapping
     public List<MenuItem> get() {
+
         List<MenuItem> menuItems = new ArrayList<>();
-        List<Menu> menus=mergerRepository.getTheMenus();
-        for (Menu menu:menus){
-            Iterator<MenuItem> Ites=menu.createIterator();
-            while (menu.createIterator().hasNext()){
-                menuItems.add(Ites.next());
-            }
-        }
+
+
+//        List<Menu> menus=mergerRepository.getTheMenus();
+//        for (Menu menu:menus){
+//            Iterator<MenuItem> Ites=menu.createIterator();
+//            while (menu.createIterator().hasNext()){
+//                menuItems.add(Ites.next());
+//            }
+//        }
 
 //        Iterator<MenuItem> lunchItems = dinerRepository.getTheMenuIterator();
 //        while (lunchItems.hasNext()) {

@@ -10,11 +10,11 @@ import java.util.List;
 @Repository
 public class DinerRepository {
 
-    public Iterator<MenuItem> getTheMenuIterator() {
-        DinerMenu dinerMenu = new DinerMenu();
-       return dinerMenu.createIterator();
-
-    }
+//    public Iterator<MenuItem> getTheMenuIterator() {
+//        DinerMenu dinerMenu = new DinerMenu();
+//       return dinerMenu.createIterator();
+//
+//    }
 
 //    public MenuItem[] getTheMenu() {
 ////        DinerMenu dinerMenu = new DinerMenu();

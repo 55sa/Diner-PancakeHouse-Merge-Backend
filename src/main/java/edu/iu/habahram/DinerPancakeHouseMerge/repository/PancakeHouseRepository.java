@@ -10,10 +10,10 @@ import java.util.List;
 
 @Repository
 public class PancakeHouseRepository {
-    public Iterator<MenuItem> getTheMenuIterator() {
-        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-      return   pancakeHouseMenu.createIterator();
-    }
+//    public Iterator<MenuItem> getTheMenuIterator() {
+//        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
+//      return   pancakeHouseMenu.createIterator();
+//    }
 //    public List<MenuItem> getTheMenu() {
 ////        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
 ////        return pancakeHouseMenu.

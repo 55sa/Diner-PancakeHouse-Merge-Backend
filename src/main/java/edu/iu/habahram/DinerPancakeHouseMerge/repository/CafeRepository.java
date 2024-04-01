@@ -8,8 +8,8 @@ import java.util.Iterator;
 
 @Component
 public class CafeRepository {
-    public Iterator<MenuItem> getTheMenuIterator() {
-        CafeMenu cafeMenu=new CafeMenu();
-        return cafeMenu.createIterator();
-    }
+//    public Iterator<MenuItem> getTheMenuIterator() {
+//        CafeMenu cafeMenu=new CafeMenu();
+//        return cafeMenu.createIterator();
+//    }
 }
