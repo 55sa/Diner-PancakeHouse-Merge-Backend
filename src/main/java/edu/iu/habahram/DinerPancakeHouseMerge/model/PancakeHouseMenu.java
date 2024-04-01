@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class PancakeHouseMenu{
+public class PancakeHouseMenu {
     List<MenuItem> menuItems;
+
+    public List<MenuItem> getMenuItems() {
+        return menuItems;
+    }
 
     public PancakeHouseMenu() {
         menuItems = new ArrayList<MenuItem>();

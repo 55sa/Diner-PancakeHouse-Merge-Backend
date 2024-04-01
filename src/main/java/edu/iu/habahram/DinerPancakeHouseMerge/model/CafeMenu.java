@@ -25,8 +25,9 @@ public class CafeMenu {
         menuItems.put(menuItem.getName(), menuItem);
     }
 
-
-
+    public HashMap<String, MenuItem> getMenuItems() {
+        return menuItems;
+    }
 //    @Override
 //    public Iterator<MenuItem> createIterator() {
 //        return menuItems.values().iterator();

@@ -37,21 +37,21 @@ public class Menu extends MenuComponent {
     public MenuItem[] getItems() {
         ArrayList<MenuItem> itemsList = new ArrayList<>();
         for (MenuComponent component : menuComponents) {
-            // Recursive call if we have a submenu
-            if (component instanceof Menu) {
-                MenuItem[] submenuItems = component.getItems();
-                for (MenuItem item : submenuItems) {
+
+
+                MenuItem[] items =  component.getItems();
+                for (MenuItem item : items) {
                     itemsList.add(item);
                 }
-            }
-            // Directly add if it's a MenuItem
-            else if (component instanceof MenuItem) {
-                itemsList.add((MenuItem) component);
-            }
-        }
-        return itemsList.toArray(new MenuItem[0]);
 
+
+
+        }
+
+        MenuItem[] res = new MenuItem[itemsList.size()];
+        return itemsList.toArray(res);
     }
+
 
 
     public Iterator<MenuComponent> createIterator(){

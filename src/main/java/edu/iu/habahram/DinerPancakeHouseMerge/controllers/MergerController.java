@@ -2,6 +2,7 @@ package edu.iu.habahram.DinerPancakeHouseMerge.controllers;
 
 import edu.iu.habahram.DinerPancakeHouseMerge.model.DinerMenu;
 import edu.iu.habahram.DinerPancakeHouseMerge.model.Menu;
+import edu.iu.habahram.DinerPancakeHouseMerge.model.MenuComponent;
 import edu.iu.habahram.DinerPancakeHouseMerge.model.MenuItem;
 import edu.iu.habahram.DinerPancakeHouseMerge.repository.CafeRepository;
 import edu.iu.habahram.DinerPancakeHouseMerge.repository.DinerRepository;
@@ -34,6 +35,13 @@ public class MergerController {
     public List<MenuItem> get() {
 
         List<MenuItem> menuItems = new ArrayList<>();
+        ArrayList<MenuComponent> m=  mergerRepository.getTheMenus();
+        for (MenuComponent s: m){
+            for (MenuItem l: s.getItems()){
+                menuItems.add(l);
+                System.out.println("added");
+            }
+        }
 
 
 //        List<Menu> menus=mergerRepository.getTheMenus();
