@@ -7,30 +7,29 @@ import java.util.ArrayList;
 
 @Component
 public class MergerRepository {
-    public ArrayList<MenuComponent> getTheMenus() {
+    public ArrayList<Menu> getTheMenus() {
         CafeMenu cafeMenu=new CafeMenu();
         DinerMenu dinerMenu=new DinerMenu();
         PancakeHouseMenu pancakeHouseMenu=new PancakeHouseMenu();
-        ArrayList<MenuComponent> menus = new ArrayList<>();
+        ArrayList<Menu> menus = new ArrayList<>();
 
      Menu cafe=new Menu("CafeMenu","cafe");
      Menu pancake=new Menu("PancakeMenu","pancake");
      Menu dinner=new Menu("DinnerMenu","Dinner");
 
-//     for (MenuItem m: dinerMenu.getMenuItems()){
-//         dinner.add(m);
-//     }
-//     menus.add(dinner);
-//
-//     for (MenuItem m: pancakeHouseMenu.getMenuItems()){
-//         pancake.add(m);
-//
-//     }
-//     menus.add(pancake);
+     for (MenuItem m: dinerMenu.getMenuItems()){
+         dinner.add(m);
+     }
+     menus.add(dinner);
 
-        dinner.add(new MenuItem("Vegetarian BLT",
-                "(Fakin') Bacon with lettuce & tomato on whole wheat", true, 2.99));
-        menus.add(dinner);
+     for (MenuItem m: pancakeHouseMenu.getMenuItems()){
+         pancake.add(m);
+
+     }
+     menus.add(pancake);
+
+
+
 
 //     for (MenuItem m: cafeMenu.getItems()){
 //         cafe.add(m);

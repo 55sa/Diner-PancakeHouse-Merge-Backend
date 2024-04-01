@@ -35,11 +35,11 @@ public class MergerController {
     public List<MenuItem> get() {
 
         List<MenuItem> menuItems = new ArrayList<>();
-        ArrayList<MenuComponent> m=  mergerRepository.getTheMenus();
+        ArrayList<Menu> m=  mergerRepository.getTheMenus();
         for (MenuComponent s: m){
             for (MenuItem l: s.getItems()){
                 menuItems.add(l);
-                System.out.println("added");
+
             }
         }
 
